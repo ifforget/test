@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">  
+    <link rel="stylesheet" href="./lib/bootcss/cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+    <!-- 头部 -->
+    <div class="header">
+        <a href="#" class="header_logo"><img src="http://www.ak48.xyz:9090/images/header_logo.png" alt=""></a>
+        <a href="#" class="header_download glyphicon glyphicon-download-alt">
+            <img src="http://www.ak48.xyz:9090/images/header_app.png" alt="">
+        </a>
+    </div>
+    <div class="mmm_search">
+        <input type="search" placeholder="请输入你想比价的商品" />
+        <a href="javascript:;" class="mmm_search_btn">搜索</a>
+    </div>
+    
+    <!-- 内容 -->
+    <div class="mmm_view">
+       <div class="mmm_nav">
+           <ul>
+               <!-- <li>
+                   <a href="">
+                       <img src="images/ic_search.png" alt="">
+                       <p>比价搜索</p>
+                    </a>
+               </li> -->
+           </ul>
+       </div>
+
+       <div class="mmm_pro">
+           <div class="pro_title">
+               <h3>超值折扣推荐</h3>
+               <div><span>></span></div>  
+           </div>
+           <div class="pro_list">
+               <ul>
+                   <!-- <li>
+                       <a href="#">
+                           <div class="left">
+                               <img src="" alt="">
+                           </div>
+                           <div class="right">
+                               <p>移动端凑单品：海天 鲜味 生抽 1.28L <i>10.9元</i></p>
+                               <div class="bottom">
+                                   <div class="text">
+                                       <span>京东商城</span>&nbsp;|&nbsp;<i>10-25 14:10</i>
+                                   </div>
+                                   <div class="tubiao">
+                                       <span class=""></span>&nbsp;<i>0</i>
+                                   </div>
+                               </div>
+                           </div>
+
+                       </a>
+                   </li> -->
+               </ul>
+           </div>
+       </div>
+
+       <div id="more">
+            <a href="./moneyctrl.html">更多优惠信息 >></a>
+       </div>
+    </div>
+    <!-- 尾部 -->
+
+    <div class="footer">
+        <div class="footer_user">
+             <a href="#" class="login">登录</a> 
+             <a href="#" class="sign">注册</a> 
+             <a href="index.html" class="backtop">返回顶部</a> 
+        </div>
+        <div class="webfoot">
+            <a href="#">手机APP下载</a>
+            <a href="#">慢慢买手机版 </a>
+            --掌上比价平台
+        </div>
+        <div>m.manmanbuy.com </div>
+    </div>
+</body>
+<!-- 模板引擎开始 -->
+<!-- 导航模板 -->
+<script type="text/template" id="navTpl">
+    {{each arr value index}}
+    <li indexmenuId="{{value.indexmenuId}}">
+        <a href="{{value.titlehref}}">
+            {{@ value.img}}
+            <p>{{value.name}}</p>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<!-- 内容模板 -->
+<script type="text/template" id="proTpl">
+    {{each arr value index}}
+        <li productId="{{value.productId}}">
+            <a href="">
+                <div class="left">
+                    {{@ value.productImgSm}}
+                </div>
+                <div class="right">
+                    <p>{{value.productName}}<i>{{value.productPinkage}}</i> </p>
+                    <div class="bottom">
+                        <div class="text">
+                            <span>{{value.productFrom}}</span>&nbsp;|&nbsp;<i>{{value.productTime}}</i>
+                        </div>
+                        <div class="tubiao"><span></span>&nbsp;<i>{{value.productComCount}}</i></div>
+                    </div>
+                </div>
+            </a>
+        </li>
+    {{/each}}
+    </script>
+<!-- 模板引擎结束 -->
+</html>
+<script src="./js/jquery.js"></script>
+<script src="./lib/arttemplate/template-web.js"></script>
+<script src="./js/index.js"></script>

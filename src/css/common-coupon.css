@@ -1,0 +1,26 @@
+body {
+  padding-top: 45px;
+}
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  background-color: #f4483e;
+  box-sizing: border-box;
+}
+#header .mui-pull-left {
+  color: #fff;
+}
+#header .mui-title {
+  color: #fff;
+}
+#header .mui-pull-right {
+  position: absolute;
+  top: -5px;
+  right: -20px;
+}
+#header .mui-pull-right img {
+  width: 50%;
+}

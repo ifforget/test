@@ -1,0 +1,177 @@
+
+html,
+body,
+.mmm_views {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+}
+ *{
+   padding: 0;
+   margin: 0;
+ }
+img {
+  width: 100%;
+}
+ 
+.mmm_header {
+  height: 68px;
+  background-color: #ff841d;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  .logo {
+    flex: 1;
+    height: 100%;
+    font-size: 20px;
+    color: white;
+    line-height: 68px;
+    padding-left: 15px;
+    letter-spacing: 1px;
+  }
+  .title {
+    flex: 3;
+    height: 100%;
+    padding-top: 19px;
+    color: white;
+    > p {
+      color: wheat;
+    }
+  }
+  .download {
+    width: 80px;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    span {
+      font-size: 33px;
+    }
+    p {
+      font-size: 16px;
+
+      color: wheat;
+    }
+  }
+}
+
+.mmm_footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  .ranking {
+    height: 40px;
+    background-color: #ff841d;
+    margin-bottom: 30px;
+
+    .title {
+      font-size: 20px;
+      line-height: 40px;
+      color: white;
+      padding-left: 15px;
+      float: left;
+    }
+    a {
+      position: absolute;
+      right: 10px;
+      top: 3px;
+      color: white;
+      border: 1px solid white;
+      border-radius: 50%;
+      padding: 3px;
+    }
+  }
+  .user {
+    display: flex;
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 30px;
+    > a {
+      display: inline-block;
+      text-align: center;
+      width: 33.3%;
+      color: black;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      &:nth-of-type(1) {
+        border-right: 1px solid #ccc;
+      }
+      &:nth-of-type(2) {
+        border-right: 1px solid #ccc;
+      }
+    }
+  }
+  .list {
+    text-align: center;
+    span{
+      font-size: 14px;
+      &:nth-of-type(1){
+        color: red;
+      }
+      &:nth-of-type(2){
+        color: #666;
+        i{
+          font-style: normal;
+          color: #999;
+        }
+      }
+    }
+    
+  }
+}
+
+
+.mmm_search {
+    display: flex;
+    justify-content: space-between;
+     input{
+         margin:10px;
+         flex: 1;
+     }
+     .mmm_search_btn{
+         background-color: #ff841d;
+         width: 100px;
+         border-radius: 20px;
+         text-align: center;
+         line-height: 40px;
+         height: 40px;
+         margin:6px;
+         color: white;
+     }
+}
+.mmm_views{
+
+    .mui-table-view{
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background: #eee;
+        .mui-active{
+            border-bottom: 1px solid #ccc;
+        .mui-collapse-content{
+            padding: 0;
+            .items{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li{
+                    float: left;
+                    height: 40px;
+                    width: 33.33%;
+                    line-height: 40px;
+                    text-align: center;
+                    border: 1px solid #ccc;
+                    border-left: none;
+                    border-top: none;
+                    a{
+                        color: #000;
+                    }
+                }
+            }
+       
+        } }
+    }
+}

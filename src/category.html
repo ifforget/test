@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>慢慢买-分类</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.css" />
+    <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="./css/category.css" />
+  </head>
+  <!-- <body class="loadding"> -->
+  <body class="">
+    <header class="mmm_header">
+      <div class="logo">慢慢买</div>
+      <div class="title">专业的比价平台
+        <p>m.manmanbuy.com</p>
+      </div>
+      <div class="download">
+          <span class="mui-icon  mui-icon-download"></span>
+        <p>APP下载</p>
+      </div>
+     </header>
+
+    <!-- 搜索框 -->
+    <div class="mmm_search">
+      <input type="search" placeholder="请输入你想比价的商品" />
+      <a href="javascript:;" class="mmm_search_btn">搜索</a>
+    </div>
+    <div class="mmm_views">
+      <ul class="mui-table-view">
+
+      </ul>
+  </div>
+
+  <div class="mmm_footer">
+    <div class="ranking">
+      <div class="title">品牌排行</div>   
+      <a href="javascript:;" class="mui-icon  mui-icon-arrowright"></a>
+       
+    </div>
+    <div class="user">
+      <a href="javascript:;">登录</a>
+      <a href="javascript:;">注册</a>
+      <a href="javascript:;">返回顶部</a>
+    </div>
+    <div class="list">
+      <span>手机app下载</span>
+      <span>慢慢买手机版--<i>掌上比价平台</i></span>
+      <p>m.mmbuy.com</p>
+    </div>
+  </div>
+
+    <!-- 模板引擎 开始 -->
+    <script type='text/html' id='catTitleTpl'>
+      {{each data item index}} 
+       <li class="mui-table-view-cell mui-collapse">
+          <a class="mui-navigate-right" data-titleid='{{item.titleId}}' href="#">{{item.title}}</a>
+          <div class="mui-collapse-content">
+                  <ul class="items"></ul>
+          </div>
+      </li>
+      {{/each}}
+  </script>
+  <script type="text/html" id='catTpl'>
+  
+  
+              {{each arr item index}}
+              <li>
+                  <a href="javascript:;">{{item.category}}</a>
+              </li>
+              {{/each}}
+    <!-- 模板引擎 结束 -->
+
+  </body>
+  <script src="./lib/zepto/zepto.js"></script>
+  <script src="./lib/arttemplate/template-web.js"></script>
+  <script src="./lib/iscroll/iscroll.js"></script>
+  <script src="./lib/mui/js/mui.js"></script>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/category.js"></script>
+
+</html>
+ 

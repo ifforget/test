@@ -1,0 +1,173 @@
+ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 0px;
+
+}
+.clearfix::after {
+    content: ".";
+    clear: both;
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    height: 0;
+}
+.clearfix {
+    zoom: 1;
+}
+
+
+.layout{
+    width: 100%;
+    .join_price_head{
+        height: 68px;
+        background-color: #ff841d;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        top: 0;
+        left: 0;
+        a{
+           color: #fff;
+           font-size: 30px;
+           line-height: 48px;
+        }
+        h3{
+            flex: 1;
+            height: 100%;
+            font-size: 20px;
+            font-weight: normal;
+            text-align: center;
+            color: white;
+            line-height: 68px;
+            letter-spacing: 1px;
+        }
+    }
+   .list{
+       margin-top: 68px;
+       display: flex;
+       .hd{
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            background-color: #fff;
+            border-bottom: 1px solid #eee;
+            box-shadow: 0px 3px 6px #dddddd;
+            display: flex;
+            position: fixed;
+           .filter{
+               width: 100%;
+               ul{
+                   display: flex;
+                  
+                   li{
+                       flex: 1;
+                       text-align: center;
+                       >a{
+                        display: block;
+                        width: 100%;
+                        color:#000;
+                       }
+                   }
+               }
+           }
+          
+           .popbox{
+            width: 100%;
+            background-color: #fff;
+            position: absolute;
+            left: 0px;
+            top: 40px;
+            box-shadow: 0px 3px 6px #dddddd;
+            display: none;
+            >div{
+             height: 40px;
+             line-height: 40px;
+             border-bottom: 1px solid #ccc;
+             display:flex;
+             a{
+                 padding-left: 20px;
+                 flex: 1;
+                 color: #666;
+                 font-size: 16px;
+                 width: 100%;
+             }
+             i{
+                 width: 40px;
+                 height: 40px;
+                 line-height: 40px;
+                 text-align: center;
+                 color: #ff841d;
+             }
+            }
+           }
+           .on{
+               display: block !important;
+           }
+          
+       }
+       .bd{
+           flex:1;
+           width: 100%;
+           padding-top: 40px;
+           background-color: #eee;
+           height: 1000px;
+           .bd_list{
+            ul{
+                display:flex;
+                padding:10px 3px;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                >li{
+                    float: left;
+                    width: 48%;
+                    
+                    >a{
+                        width: 100%;
+                        display: block;
+                        background-color: #fff;
+                        padding: 8px;
+                        >.pic{
+                            width: 100%;
+                            display: block;
+                            img{
+                                width: 100%;
+                                display: block;
+                            }
+                        }
+                        >.title{
+                            font-size: 14px;
+                            color: #333;
+                            overflow:hidden; //超出的文本隐藏
+                            text-overflow:ellipsis; //溢出用省略号显示
+                            white-space:nowrap; //溢出不换行
+                        }
+                        >.other{
+                            padding: 6px;
+                            >.price{
+                                margin-top: 4px;
+                                color: #f8601d;
+                                font-size: 26px;
+                                float: left;
+                            }
+                            >.btn{
+                                font-size: 14px;
+                                color:#fff;
+                                background-color: #f8601d;
+                                float:right;
+                                padding: 4px 10px;
+                                border-radius: 4px;
+
+                            }
+                            
+                        }
+
+                    }
+                }
+            }
+           }
+           
+       }
+   }
+    
+}

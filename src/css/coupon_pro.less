@@ -1,0 +1,53 @@
+@import "common-coupon.less";
+@import "common-footer.less";
+.mmm_view{
+    position: relative;
+    background-color: #fff;
+    p{  
+        padding: 5px 0;
+        color: #ccc;
+        text-align: center;
+        font-size: 8px;
+    }
+    .pro_list{
+        ul{
+            list-style: none;
+        }
+        li{
+            
+            
+            border-bottom: 1px solid #ccc;
+            a{  
+                display: flex;
+                padding: 10px;
+                color: #000;
+                .item_left{
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 70%;
+                    }
+                }
+                .item_right{
+                    flex: 1;
+                    font-size: 14px;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    .pro_name{
+                        
+                    }
+                    .pro_price{
+
+                    }
+                    .pro_date{
+                        color: orange;
+                    }
+                }
+            }
+        }
+    }
+}

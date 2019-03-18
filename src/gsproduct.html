@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>凑单品--慢慢买比价网</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.css" />
+    <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="./css/gsproduct.css" />
+</head>
+
+<body>
+
+    <div class="layout">
+        <div class="join_price_head mui-bar mui-bar-nav">
+            <a href="index.html" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+            <h3 class="mui-title">凑单品</h3>
+        </div>
+        <div class="list">
+            <div class="hd">
+                <div class="filter">
+                    <ul>
+                        <li><a href="javascript:;">京东 </a></li>
+                        <li><a href="javascript:;">华北 </a></li>
+                        <li><a href="javascript:;">1元 </a></li>
+                    </ul>
+                </div>
+
+                <!-- 各种下拉 -->
+                <div class="popsort popbox ">
+
+                    <!--  -->
+
+                </div>
+                <div class="poparea popbox"></div>
+                <div class="popprice popbox">
+                    <div>
+                        <a href="javascript:;">全部价格</a>
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="bd">
+                <div class="bd_list">
+                    <!-- <ul>
+                        <li>
+                            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360" class="item border-img">
+                                <div class="pic"><img src="http://img.alicdn.com/bao/uploaded/i1/TB1ZHluNpXXXXbEaXXXXXXXXXXX_!!0-item_pic.jpg_160x160.jpg"></div>
+                                <div class="title">可爱多婴儿手口湿巾10抽随身装质地柔软 亲肤温和</div>
+                                <div class="other">
+                                    <div class="price">¥0.79</div>
+                                    <div class="btn">去凑单</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                                <a href="http://item.m.jd.com/ware/view.action?wareId=1274360" class="item border-img">
+                                    <div class="pic"><img src="http://img.alicdn.com/bao/uploaded/i1/TB1ZHluNpXXXXbEaXXXXXXXXXXX_!!0-item_pic.jpg_160x160.jpg"></div>
+                                    <div class="title">可爱多婴儿手口湿巾10抽随身装质地柔软 亲肤温和xxxxxxxxxxxxxxxxx</div>
+                                    <div class="other clearfix">
+                                        <div class="price">¥0.79</div>
+                                        <div class="btn">去凑单</div>
+                                        
+                                    </div>
+                                </a>
+                            </li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+<script type="text/html" id="goodsJoinTp">
+    <ul>
+        {{each arr item index}}
+            <li>
+                <a href="http://item.m.jd.com/ware/view.action?wareId=1274360" class="item border-img">
+                    <div class="pic"><img src="{{item.productImg}}"></div>
+                    <div class="title">{{item.productName}}</div>
+                    <div class="other clearfix">
+                        <div class="price">{{item.productPrice}}</div>
+                        <div class="btn">去凑单</div>
+                    </div>
+                </a>
+            </li>
+         {{/each}}   
+        </ul>
+
+
+    
+</script>
+
+
+<script src="./lib/mui/js/mui.js"></script>
+<script src="./lib/zepto/zepto.js"></script>
+<script src="./lib/arttemplate/template-web.js"></script>
+<script src="./js/gsproduct.js"></script>
+
+</html>

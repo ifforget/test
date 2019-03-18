@@ -1,0 +1,44 @@
+.fs_detail_info {
+  background-color: #fff;
+  padding: 10px 5px;
+  width: 100%;
+}
+.fs_detail_info .info_name {
+  font-weight: 600;
+  font-size: 20px;
+}
+.fs_detail_info .info_price {
+  color: orange;
+  margin: 10px ;
+  font-size: 18px;
+}
+.fs_detail_info .info_msg {
+  width: 100%;
+}
+.fs_detail_info .info_msg .info_msg1 {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #999999;
+}
+.fs_detail_info .info_msg .info_describe {
+  text-wrap: wrap;
+}
+.fs_detail_info .info_msg img {
+  display: block;
+  width: 100%;
+}
+.fs_detail_info .input {
+  text-align: center;
+}
+.fs_detail_info .input input {
+  background-color: orange;
+  color: white;
+  margin: 20px 20px;
+}
+.fs_detail_info .userimg {
+  width: 40px;
+}
+.fs_detail_info .userimg img {
+  width: 100%;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./lib/bootcss/cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/mui/3.7.1/css/mui.css">
+    <link rel="stylesheet" href="./css/coupon.css">
+
+</head>
+
+<body>
+
+    <!-- 头部 -->
+    <header id="header" class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="./index.html"></a>
+        <h1 class="mui-title">优惠券</h1>
+        <a class="mui-icon mui-pull-right">
+            <img src="http://www.ak48.xyz:9090/images/header_app.png" alt="">
+        </a>
+    </header>
+    <!-- 内容 -->
+    <div class="mmm_view">
+       <div class="menus">
+        <ul>
+            <li>
+                <a href="./coupon_pro.html?couponid=0">
+                    <img src="http://www.juanlaoda.com/ImageUpload/2013310191729944.jpg" alt="">
+                    <p>肯德基</p>
+                </a>
+            </li>
+            <li>
+                <a href="./coupon_pro.html?couponid=1">
+                    <img src="http://www.juanlaoda.com/ImageUpload/2013310204621492.jpg" alt="">
+                    <p>必胜客</p>
+                </a>
+            </li>
+            <li>
+                <a href="./coupon_pro.html?couponid=2">
+                    <img src="http://www.juanlaoda.com/ImageUpload/2013310205511184.jpg" alt="">
+                    <p>棒约翰</p>
+                </a>
+            </li>
+            <li>
+                <a href="./coupon_pro.html?couponid=3">
+                    <img src="http://www.juanlaoda.com/ImageUpload/2013310191729944.jpg" alt="">
+                    <p>哈根达斯</p>
+                </a>
+            </li>
+        </ul>
+       </div>
+       
+    </div>
+    <!-- 尾部 -->
+    <div class="footer">
+        <div class="footer_user">
+             <a href="#" class="login">登录</a> 
+             <a href="#" class="sign">注册</a> 
+             <a href="#" class="backtop">返回顶部</a> 
+        </div>
+        <div class="webfoot">
+            <a href="#">手机APP下载</a>
+            <a href="#">慢慢买手机版 </a>
+            --掌上比价平台
+        </div>
+        <div>m.manmanbuy.com </div>
+    </div>
+</body>
+<!-- 模板引擎开始 -->
+<script type="text/template" id="menusTemp">
+    {{each data as value index}}
+        <li>
+            <a href="{{value.couponLink}}?{{value.couponId}}">
+                <img src="{{value.couponImg}}" alt="">
+                <p>{{value.couponTitle}}</p>
+            </a>
+        </li>
+    {{/each}}
+</script>
+<!-- 模板引擎结束 -->
+</html>
+<script src="js/jquery.js"></script>
+<script src="js/template.js"></script>
+<script src="./js/coupon.js"></script>

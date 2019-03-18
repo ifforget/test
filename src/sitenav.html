@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商场导航</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.css" />
+    <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="./css/sitenav.css" />
+</head>
+
+<body>
+    <div class="layout">
+        <div class="join_price_head mui-bar mui-bar-nav">
+            <a href="index.html" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+            <h3 class="mui-title">商场导航</h3>
+        </div>
+
+        <div class="brand">
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+</body>
+<script type='text/html' id="brandTP">
+
+    <ul>
+              {{each arr item index}} 
+            <li><a href="{{item.navHref}}"><img src="{{item.navImg}}" alt="">
+                    <span>{{item.navTitle}}</span></a></li>
+          {{/each}}          
+    </ul>
+
+
+</script>
+
+<script src="./lib/mui/js/mui.js"></script>
+<script src="./lib/zepto/zepto.js"></script>
+<script src="./lib/arttemplate/template-web.js"></script>
+<script src="./js/sitenav.js"></script>
+
+</html>

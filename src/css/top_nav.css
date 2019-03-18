@@ -1,0 +1,14 @@
+body {
+  padding-top: 50px;
+}
+#header {
+  color: white;
+  background-color: orange;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#header img {
+  width: 50%;
+  padding-top: 5px;
+}
